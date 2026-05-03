@@ -29,6 +29,10 @@
 	qcom,flash-disable-soc = <0>;
 	qcom,thermal-mitigation = <3000000 2500000 2000000
 			2000000 1500000 900000 800000 500000 100000>;
+	/* Enable HVDCP for 18W fast charging */
+	qcom,hvdcp-disable = <0>;
+	qcom,hvdcp-autonomous-enable;
+	qcom,hvdcp3-max-icl-ua = <3000000>;
 };
 
 &smb1355 {
